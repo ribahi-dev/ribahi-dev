@@ -2,9 +2,9 @@
 """Compose the neofetch-style profile README (ASCII art + right-hand info card)."""
 import io
 import re
-from asciify2 import render
+from artload import render
 
-ART_W = 46
+ART_W = 42
 GAP = 3
 INFO_W = 56  # width of the info column, dots included
 
@@ -69,13 +69,14 @@ INFO = [
 
 def main():
     art = render(width=ART_W)
+    art_w = max((len(l) for l in art), default=0)
     n = max(len(art), len(INFO))
 
     out = io.StringIO()
     for i in range(n):
         left = art[i] if i < len(art) else ""
         right = INFO[i] if i < len(INFO) else ""
-        pad = " " * (ART_W - len(left) + GAP)
+        pad = " " * (art_w - len(left) + GAP)
         out.write((left + pad + right).rstrip() + "\n")
     return out.getvalue()
 

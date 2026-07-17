@@ -2,7 +2,7 @@
 """Generate a coloured neofetch-style SVG (renders in colour on GitHub)."""
 import re
 from html import escape
-from asciify2 import render
+from artload import render
 
 # ---- palette (matches the neofetch look) ----
 BG      = "#0d1117"
