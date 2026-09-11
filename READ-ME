@@ -1,0 +1,280 @@
+
+
+Je construis des systèmes d'IA dont chaque décision peut être expliquée.
+
+
+
+
+
+4ᵉ année  ·  Ingénieur d'État en Informatique & Réseaux  ·  spécialité IA & Data
+EMSI Casablanca  ·  promotion 2028
+
+Une alerte de fraude qui ne dit pas pourquoi est inutilisable par un analyste. Un agent de
+conformité qui ne trace pas ses décisions est irrecevable par un auditeur. Un moteur de recherche
+qu'on n'évalue pas face à une baseline est une affirmation, pas un résultat.
+
+C'est le fil rouge de ce que je construis : de l'IA qui rend des comptes.
+
+
+
+
+Disponible pour un stage en IA / Data · Casablanca
+
+
+
+
+
+Projets principaux
+
+
+
+🏦 novabank
+
+
+
+Détection de fraude bancaire explicable
+
+
+
+
+
+Plateforme d'aide à la décision pour agence bancaire. Le modèle ne renvoie pas qu'un score de
+risque : SHAP décompose la contribution de chaque variable, le conseiller lit l'explication en
+langage naturel, et sa décision est réinjectée dans le modèle par une boucle de feedback.
+
+Sécurité de bout en bout — JWT, contrôle d'accès par rôles, journal d'audit. Démarrage en une
+commande via Docker Compose, intégration continue sur chaque push.
+
+**Stack** · FastAPI · scikit-learn · SHAP · PostgreSQL · Alembic · React 18 · Docker · GitHub Actions
+
+🎓 Réalisé pendant mon stage chez Attijariwafa Bank.
+
+
+
+
+🔎 recherche-semantique-multilingue
+
+
+
+Poser la question en arabe, trouver l'article en anglais
+
+Corpus    8 520 articles arXiv, intégralement en anglais
+
+Requête   كشف الاحتيال المصرفي باستخدام التعلم الآلي
+          « détection de la fraude bancaire par apprentissage automatique »
+
+Résultat  Shapley Value-Guided Adaptive Ensemble Learning for Explainable
+          Financial Fraud Detection                            score 0,837
+
+Baseline  aucun résultat — sur cette requête et sur les 19 autres
+
+La question et le titre trouvé ne partagent aucun caractère : pas même l'alphabet. Là où une
+recherche par mots-clés est structurellement incapable de répondre, la recherche vectorielle
+rapproche les sens plutôt que les chaînes.
+
+Le dépôt contient le protocole d'évaluation complet et régénérable, pas seulement le code.
+
+**Stack** · Python · embeddings multilingues · index vectoriel · NLP
+
+
+
+
+⚖️ agent-conformite-kyc
+
+
+
+Le LLM lit. Les règles décident.
+
+Agent qui analyse une pièce justificative (CIN, justificatif de domicile) et rend un verdict motivé :
+VALIDÉ · REJETÉ · À VÉRIFIER, avec la trace de chaque contrôle.
+
+Le modèle de langage extrait l'information — nom, dates, émetteur. Le code Python applique les règles
+et tranche. Le LLM ne juge jamais de la conformité lui-même.
+
+
+
+
+
+
+
+
+
+
+
+Si le LLM décide
+
+
+
+Si les règles décident
+
+
+
+
+
+Reproductibilité
+
+
+
+la même pièce peut varier
+
+
+
+même entrée → même verdict
+
+
+
+
+
+Auditabilité
+
+
+
+« le modèle a estimé que… »
+
+
+
+règle des 3 mois · config.py:16
+
+
+
+
+
+Changer un seuil
+
+
+
+réécrire et retester un prompt
+
+
+
+changer une constante
+
+**Stack** · Python · LLM · moteur de règles métier · KYC / LBC-FT
+
+
+
+
+
+Autres projets
+
+
+
+
+
+
+
+
+
+
+
+stagematch-ai
+
+Recommandation de stages : analyse automatique du CV, matching NLP avec scoring explicable, scraping des offres marocaines.
+
+Django REST React/TS NLP
+
+
+
+emsi-booking
+
+Réservation de salles : algorithme de détection de conflits, workflow de validation, Google OAuth, calendrier interactif.
+
+Django 5 DRF PostgreSQL
+
+
+
+StockFlow
+
+ERP et point de vente pour PME : stock en temps réel, facturation, suivi des dépenses, bénéfice net calculé automatiquement.
+
+React TypeScript Vite Tailwind
+
+
+
+carepal
+
+Compagnon hybride matériel/logiciel de bien-être étudiant pendant les sessions de révision.
+
+JavaScript IoT
+
+
+
+
+
+
+
+Stack
+
+
+
+
+
+
+
+Langages
+
+
+
+
+
+
+
+
+
+
+IA & Data
+
+
+
+
+
+
+
+Backend
+
+
+
+
+
+
+Frontend
+
+
+
+
+
+Outils
+
+
+
+
+
+
+
+
+
+
+
+
+En dehors du code
+
+Vice-président du bureau des étudiants et président du club de lecture de l'EMSI.
+J'organise, j'anime, et je lis beaucoup trop.
+
+
+
+
+
+
+
+
+
+
+
+Parlons-en
+
+Stage IA / Data · collaboration sur un projet · ou juste une question sur un dépôt
+
+elmehdi.ribahi@gmail.com · LinkedIn
+
+
