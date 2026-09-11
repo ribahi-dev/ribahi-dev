@@ -120,3 +120,6 @@ Vice-président du bureau des étudiants et président du club de lecture de l'E
   <b>Ouvert aux opportunités de stage et aux collaborations sur des projets IA / Data</b><br>
   <a href="mailto:elmehdi.ribahi@gmail.com">elmehdi.ribahi@gmail.com</a> · <a href="https://linkedin.com/in/el-mehdi-ribahi">LinkedIn</a>
 </p>
+
+
+elmehdi.ribahi@gmail.com
